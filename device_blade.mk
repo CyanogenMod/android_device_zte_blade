@@ -130,7 +130,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.hsxpa=2 \
     ro.ril.gprsclass=10 \
     ro.build.baseband_version=P729BB01 \
-    ro.telephony.default_network=3
+    ro.telephony.default_network=0 \
+    ro.telephony.call_ring.multiple=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
