@@ -43,7 +43,6 @@ PRODUCT_PACKAGES += \
     SpareParts \
     Development \
     Term \
-    FM \
     gralloc.blade \
     copybit.blade \
     gps.blade \
