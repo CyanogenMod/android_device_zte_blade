@@ -67,6 +67,11 @@ adb pull /system/lib/liboemcamera.so ../../../vendor/zte/$DEVICE/proprietary/lib
 adb pull /system/lib/libmmjpeg.so ../../../vendor/zte/$DEVICE/proprietary/libmmjpeg.so
 adb pull /system/lib/libmmipl.so ../../../vendor/zte/$DEVICE/proprietary/libmmipl.so
 
+#gps
+adb pull /system/lib/libloc.so ../../../vendor/zte/$DEVICE/proprietary/libloc.so
+adb pull /system/lib/libloc-rpc.so ../../../vendor/zte/$DEVICE/proprietary/libloc-rpc.so
+adb pull /system/lib/libcommondefs.so ../../../vendor/zte/$DEVICE/proprietary/libcommondefs.so
+
 #OMX
 adb pull /system/lib/libOmxEvrcEnc.so ../../../vendor/zte/$DEVICE/proprietary/libOmxEvrcEnc.so
 adb pull /system/lib/libOmxAacDec.so ../../../vendor/zte/$DEVICE/proprietary/libOmxAacDec.so
@@ -149,6 +154,10 @@ PRODUCT_COPY_FILES += \\
     vendor/zte/__DEVICE__/proprietary/liboemcamera.so:obj/lib/liboemcamera.so \\
     vendor/zte/__DEVICE__/proprietary/libmmjpeg.so:system/lib/libmmjpeg.so \\
     vendor/zte/__DEVICE__/proprietary/libmmipl.so:system/lib/libmmipl.so \\
+    vendor/zte/__DEVICE__/proprietary/libloc.so:system/lib/libloc.so \\
+    vendor/zte/__DEVICE__/proprietary/libloc.so:obj/lib/libloc.so \\
+    vendor/zte/__DEVICE__/proprietary/libloc-rpc.so:system/lib/libloc-rpc.so \\
+    vendor/zte/__DEVICE__/proprietary/libcommondefs.so:system/lib/libcommondefs.so \\
     vendor/zte/__DEVICE__/proprietary/hci_qcomm_init:system/bin/hci_qcomm_init \\
     vendor/zte/__DEVICE__/proprietary/libOmxEvrcEnc.so:/system/lib/libOmxEvrcEnc.so \\
     vendor/zte/__DEVICE__/proprietary/libOmxAacDec.so:/system/lib/libOmxAacDec.so \\

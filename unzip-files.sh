@@ -64,6 +64,11 @@ unzip -j -o ../../../${DEVICE}_update.zip system/lib/liboemcamera.so -d ../../..
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/libmmjpeg.so -d ../../../vendor/zte/$DEVICE/proprietary/
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/libmmipl.so -d ../../../vendor/zte/$DEVICE/proprietary/
 
+#gps
+unzip -j -o ../../../${DEVICE}_update.zip system/lib/libloc.so -d ../../../vendor/zte/$DEVICE/proprietary/
+unzip -j -o ../../../${DEVICE}_update.zip system/lib/libloc-rpc.so -d ../../../vendor/zte/$DEVICE/proprietary/
+unzip -j -o ../../../${DEVICE}_update.zip system/lib/libcommondefs.so -d ../../../vendor/zte/$DEVICE/proprietary/
+
 #OMX
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/libOmxEvrcEnc.so -d ../../../vendor/zte/$DEVICE/proprietary/
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/libOmxAacDec.so -d ../../../vendor/zte/$DEVICE/proprietary/
@@ -147,6 +152,10 @@ PRODUCT_COPY_FILES += \\
     vendor/zte/__DEVICE__/proprietary/liboemcamera.so:obj/lib/liboemcamera.so \\
     vendor/zte/__DEVICE__/proprietary/libmmjpeg.so:system/lib/libmmjpeg.so \\
     vendor/zte/__DEVICE__/proprietary/libmmipl.so:system/lib/libmmipl.so \\
+    vendor/zte/__DEVICE__/proprietary/libloc.so:system/lib/libloc.so \\
+    vendor/zte/__DEVICE__/proprietary/libloc.so:obj/lib/libloc.so \\
+    vendor/zte/__DEVICE__/proprietary/libloc-rpc.so:system/lib/libloc-rpc.so \\
+    vendor/zte/__DEVICE__/proprietary/libcommondefs.so:system/lib/libcommondefs.so \\
     vendor/zte/__DEVICE__/proprietary/hci_qcomm_init:system/bin/hci_qcomm_init\\
     vendor/zte/__DEVICE__/proprietary/libOmxEvrcEnc.so:system/lib/libOmxEvrcEnc.so \\
     vendor/zte/__DEVICE__/proprietary/libOmxAacDec.so:system/lib/libOmxAacDec.so \\
